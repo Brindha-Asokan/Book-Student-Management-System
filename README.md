@@ -22,7 +22,7 @@ This is a web application for an online book store where students can browse and
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository: https://github.com/Brindha-Asokan/Book-Student-Management-System
 
 2. Navigate to the project directory:
 
