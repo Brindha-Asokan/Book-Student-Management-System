@@ -34,11 +34,12 @@ To run this project locally, follow these steps:
   ```
   DATABASE_URI=your_database_connection_string
   SECRET_KEY=your_secret_key
+  SECRET_KEY_STUDENT=your_secret_key
   ```
 
 5. Run the application: Front end - npm run dev, Backend - npm start
 
-6. Access the application at `http://localhost:5173` in your web browser.
+6. Access the application at `http://localhost:3000` in your web browser.
 
 ## Usage
 
