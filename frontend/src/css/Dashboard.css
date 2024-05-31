@@ -1,0 +1,51 @@
+.dashboard {
+    background-image: url('/images/Dashboard.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.dashboard-box {
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 600px;
+    font-size: 30px;
+    background-color: rgba(255, 232, 200, 0.5);
+    border-radius: 15px;
+    opacity: 0;
+    animation: slideIn 1s forwards;
+    margin-top: 10%;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.animated-text {
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

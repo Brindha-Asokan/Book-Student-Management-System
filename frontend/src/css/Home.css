@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.main {
+    background-image: url('/public/images/Home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-text {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    word-spacing: 1%;
+}
+
+.main-description {
+    font-size: 1.2rem;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    flex: 1;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 600px;
+    font-size: 80px;
+    margin-top: 18%;
+    background-color: rgba(255, 232, 200, 0.5);
+    border-radius: 15px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s forwards;
+    color: black;
+    line-height: 1.5;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    margin-left: 20px;
+    margin: 10px;
+}
+
+html,
+body {
+    overflow: hidden;
+}
