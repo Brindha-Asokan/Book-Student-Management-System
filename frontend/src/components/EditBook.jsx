@@ -93,8 +93,10 @@ const EditBook = () => {
             <label htmlFor="ImageURL">Image URL:</label>
             <input type="text" placeholder="Enter Image URL" value={imageUrl} onChange={handleImageURL} />
           </div>
+          <div className='btn-div'>
           <button className="btn-login" onClick={handleSubmit}>Update</button>
-          <button className="btn-cancel" onClick={handleCancel}>Cancel</button>  {/* Correct button label */}
+          <button className="btn-cancel" onClick={handleCancel}>Cancel</button>
+          </div>
         </div>
       </div>
       <ToastContainer />
