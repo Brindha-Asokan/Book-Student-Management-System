@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.book-list {
+    display: grid;
+    gap: 10px;
+    padding: 8px;
+    justify-items: center;
+    overflow-y: auto;
+    height: 87vh;
+    background-color: #b66a34;
+}
+
+@media screen and (min-width: 768px) {
+    .book-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .book-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .book-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    background-color: #fff;
+    text-align: center;
+    width: calc(100% - 20px);
+    max-width: 200px;
+    height: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+input[type="text"] {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.book-card:hover {
+    box-shadow: 0 8px 16px rgba(235, 227, 227, 0.2);
+    transform: scale(1.04);
+}
+
+.book-image {
+    width: 200px;
+    height: auto;
+    max-height: 200px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.book-details {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.book-details h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.book-details p {
+    font-size: 1em;
+    margin-top: 5px;
+    color: #666;
+    width: 200px;
+}
+
+.book-details h3,
+.book-details p {
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 7px;
+    margin-bottom: 0px;
+}
+
+.button1,
+.button2 {
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 90%;
+    bottom: 2%;
+}
+
+.button1 {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    left: 2%;
+}
+
+.button2 {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+}
