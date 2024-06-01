@@ -17,10 +17,16 @@ export const studentController = asyncHandler(async (req, res) => {
       password: hashPassword,
       rollNo,
       grade,
+<<<<<<< HEAD
       role: 'student'
     });
 
     return res.json({ registered: true, student: newStudent, role:'student'});
+=======
+    });
+
+    return res.json({ registered: true, student: newStudent });
+>>>>>>> origin/master
   } catch (err) {
     return res.status(400).json({ message: 'Error in registering student' });
   }

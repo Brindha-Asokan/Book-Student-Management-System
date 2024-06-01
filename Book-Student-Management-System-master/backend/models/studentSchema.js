@@ -19,10 +19,6 @@ const studentSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Please select the grade'],
     },
-    role: {
-        type: String,
-        required: [true, 'Please select the role'],
-    },
 }, {
     timestamps: true
 });
